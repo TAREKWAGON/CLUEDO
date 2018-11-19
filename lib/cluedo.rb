@@ -21,8 +21,64 @@ def bad_sorting_player(array_player, starter)
   puts sort_array_player
 end
 
-# si le starter match avec un player, l'array start avec lui puis on ajoute le reste
-
 def sort_array_players(array_player, starter)
   array_player.rotate(array_player.index(starter))
 end
+
+# SUDO CODE
+
+# 1 On demande les trois cartes pour les supprimer automatiquement
+# 2 On crée 3 array avec toutes les cartes
+# 3 On supprime dans chacune des array.
+
+def characters_array_mt(card)
+  characters_array = ["Madame Leblanc", "Madame Pervenche", "Colonel Moutarde", "Mademoiselle Rose", "Docteur Olive", "Professeur Violet"]
+  card.each do |el|
+    characters_array.delete(el)
+  end
+  puts characters_array
+end
+
+def weapons_array_mt(card)
+  weapons_array = ["Chandelier", "Clef anglaise", "Corde", "Matraque", "Poignard", "Revolver"]
+  card.each do |el|
+    weapons_array.delete(el)
+  end
+  puts weapons_array
+end
+
+def places_array_mt(card)
+  places_array = ["Hall", "Cuisine", "Verenda", "Bilard", "Ball", "Salon", "Bureau", "Bibliotheque", "Salle a manger"]
+  card.each do |el|
+    places_array.delete(el)
+  end
+  puts places_array
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
