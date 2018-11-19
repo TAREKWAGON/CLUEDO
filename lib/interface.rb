@@ -54,6 +54,36 @@ puts sort_array_player
 
 
 
+cards = []
+puts "What are your cards ?"
+print "Card 1"
+cards << gets.chomp
+print "Card 2"
+cards << gets.chomp
+print "Card 3"
+cards << gets.chomp
+
+
+puts characters_array_mt(cards)
+puts weapons_array_mt(cards)
+puts places_array_mt(cards)
+
+puts "----------"
+puts "----------"
+puts "----------"
+
+puts "#{sort_array_player[0]} is playing"
+print "Tell me his suspect"
+supposition = []
+supposition << gets.chomp
+print "Tell me the weapon"
+supposition << gets.chomp
+print "Tell me the place"
+supposition << gets.chomp
+
+
+
+
 
 
 
